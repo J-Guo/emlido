@@ -1,0 +1,61 @@
+.acidjs-rating-stars,
+.acidjs-rating-stars label::before
+{
+    display: inline-block;
+}
+
+.acidjs-rating-stars label:hover,
+.acidjs-rating-stars label:hover ~ label
+{
+    color: #189800;
+}
+
+.acidjs-rating-stars *
+{
+
+    padding: 0;
+}
+
+.acidjs-rating-stars input
+{
+    display: none;
+
+}
+
+.acidjs-rating-stars
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    width:100%;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.acidjs-rating-stars label
+{
+    color: #ccc;
+}
+
+.acidjs-rating-stars label::before
+{
+    content: "\2605";
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.acidjs-rating-stars input:checked ~ label
+{
+    color: #f5b301;
+}
+
+.acidjs-rating-disabled
+{
+    opacity: .50;
+
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none;
+}

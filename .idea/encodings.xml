@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/public/assets/css/review-form.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/assets/js/google-map.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/assets/js/pages/chat-pusher.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/affiliate/assigned-task-list.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/affiliate/faq.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/auth/otp.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storage/app/avatars/default.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storage/app/avatars/default2.jpg" charset="UTF-8" />
+  </component>
+</project>

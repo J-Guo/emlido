@@ -1,0 +1,70 @@
+.messages {
+    height: 65vh;
+    padding-top: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color: #626869;
+    font-size: 18px;
+    font-weight: 200;
+    overflow: auto;
+}
+
+.messages .message-received {
+
+    position: relative;
+    padding: 7px;
+    text-align: left;
+
+}
+
+.messages .message-received .message-text{
+    background-color: #f0f0f0;
+    padding: 13px 19px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 400;
+
+
+}
+
+
+.messages .message-sent {
+
+    position: relative;
+    padding: 7px;
+    text-align: right;
+
+
+}
+
+.messages .message-sent .message-text{
+
+    background-color: #449d44;
+    padding: 13px 19px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 400;
+
+}
+
+.btn-message{
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    background: #000 none repeat scroll 0 0;
+    z-index: 1;
+    font-size: 11px;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    overflow: hidden;
+    border-radius: 0;
+    letter-spacing: 1px;
+}
+
+
