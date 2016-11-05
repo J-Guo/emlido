@@ -12,7 +12,7 @@
         <h1 class="clearfix">Emlido - Make Review </h1>
 
         <!-- Left Side Bar -->
-        @include('partials.left-side-bar')
+        @include('partials.left-side-bar-affiliate')
 
         <!-- Pages -->
         <div class="contact-form date-listing col-offset-top-25">

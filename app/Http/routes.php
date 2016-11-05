@@ -90,7 +90,11 @@ Route::group(['middleware'=>'web'],function(){
         Route::post('post-task','TasksController@postTask');
 
         //show profile page for user
-        Route::get('user-profile', 'UsersController@showUserProfile');
+//        Route::get('user-profile', 'UsersController@showUserProfile');
+
+        //show affiliate profile (reviews) for users
+        Route::get('affiliate-profile/{id}', 'UsersController@showAffiliateProfileForUser');
+
         //show edit profile page for usere
         Route::get('profile/edit','UsersController@showEditProfile');
         //hanlde user edit profile request
@@ -182,7 +186,11 @@ Route::group(['middleware'=>'web'],function(){
         Route::get('asettings','PagesController@showASettings');
 
         //show profile(gallery) page for affiliate
-        Route::get('aprofile', 'UsersController@showAProfile');
+//        Route::get('aprofile', 'UsersController@showAProfile');
+
+        //show user's profile page for affiliate
+        Route::get('user-profile/{id}', 'UsersController@showUserProfileForAffiliate');
+
         //show edit profie page for affiliate
         Route::get('aprofile/edit', 'UsersController@showEditAProfile');
         //handle edit profile for affiliate

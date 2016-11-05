@@ -39,8 +39,10 @@
                 <div class="media">
                     <div class="media-left">
                         <div class="list-img">
+                            <a href="{{url('user-profile/'.$poster_task_merged['poster']->id)}}">
                             <img src="{{url('avatars/'.$poster_task_merged['poster']->profile_photo)}}"
                                  width="100" height="100">
+                            </a>
                         </div>
                         <!-- Show User Rating-->
                         <div class="date-list">

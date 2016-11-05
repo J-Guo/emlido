@@ -62,8 +62,10 @@
                         <div class="media">
                             <div class="media-left">
                                 <div class="list-img">
+                                    <a href="{{url('affiliate-profile/'.$offer_affiliate_merged['sender']->id)}}">
                                     <img src="{{url('avatars/'.$offer_affiliate_merged['sender']->profile_photo)}}"
                                          height="100"  width="100">
+                                    </a>
                                 </div>
                                 <!-- Show User Rating-->
                                 <div class="date-list">

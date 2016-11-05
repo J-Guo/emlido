@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -129,6 +130,19 @@ class UsersController extends Controller
     }
 
     /**
+     * show affiliate's profile (reviews) page for user
+     * @param $id
+     * @return View
+     */
+    protected function showAffiliateProfileForUser($id){
+
+        //get target affiliate
+        $affiliate = User::find($id);
+
+        return view('affiliate-profile')->with('affiliate',$affiliate);
+    }
+
+    /**
      * show edit profile page for existing user
      * @return View
      */
@@ -237,6 +251,20 @@ class UsersController extends Controller
         return view('affiliate.profile')
             ->with('imageURL',$imageURL)
             ->with('displayName',$user->display_name);
+    }
+
+    /**
+     * show the profile page of uers for affiliate
+     * @param $id
+     * @return View
+     */
+    public function showUserProfileForAffiliate($id){
+
+        //get target user who affiliate wants to view
+        $user = User::find($id);
+
+        return view('affiliate.profile')
+            ->with('user',$user);
     }
 
     /**
