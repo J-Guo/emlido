@@ -45,8 +45,8 @@ class LoginController extends Controller
         $user= User::where('mobile',$mobileNum)->first();
 
         //generate a OTP for user and save it
-//        $otp = $this->generateOTP(); //live OTP
-        $otp = 2222;   //test OTP
+        $otp = $this->generateOTP(); //live OTP
+//        $otp = 2222;   //test OTP
         $user->otp = bcrypt($otp) ;
         $user->save();
 
@@ -57,7 +57,7 @@ class LoginController extends Controller
         //create message and send it
         try{
 
-         //   $this->sendSMS($mobileNum,$smsBody);
+            $this->sendSMS($mobileNum,$smsBody);
 
             return view("auth.otp")
                 ->with('mobileNum',$mobileNum)

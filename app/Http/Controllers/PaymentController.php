@@ -337,7 +337,7 @@ class PaymentController extends Controller
             //create message and send it
             try{
 
-               // $this->sendSMS($mobileNum,$smsBody);
+                $this->sendSMS($mobileNum,$smsBody);
 
                 return redirect('assigned-date');
 
@@ -472,7 +472,7 @@ class PaymentController extends Controller
         //create message and send it
         try{
 
-           // $this->sendSMS($mobileNum,$smsBody);
+            $this->sendSMS($mobileNum,$smsBody);
 
             //dd($request->input());
             return redirect('request-payment')

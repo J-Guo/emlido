@@ -446,7 +446,7 @@ class TasksController extends Controller
         //create message and send it
         try{
 
-          //  $this->sendSMS($mobileNum,$smsBody);
+            $this->sendSMS($mobileNum,$smsBody);
 
             return redirect('task-list');
         }
